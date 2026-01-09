@@ -28,7 +28,7 @@ blueprint:
 trigger:
 - platform: state
   entity_id: !input entity
-  to: disarmed
+  to: armed_night
   id: to_state_armed_night
 - platform: state
   entity_id: !input entity
