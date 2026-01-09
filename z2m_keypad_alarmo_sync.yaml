@@ -163,7 +163,7 @@ action:
         - service: alarmo.arm
           data:
             entity_id: !input entity
-            mode: home
+            mode: night
             code: '{{ trigger.payload_json.action_code }}'
             context_id: '{{ trigger.payload_json.action_transaction }}'
   - conditions:
