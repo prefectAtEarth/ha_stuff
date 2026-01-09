@@ -237,7 +237,7 @@ action:
         - condition: template
           value_template: '{{ trigger.event.data.context_id != null }}'
         - condition: template
-          value_template: '{{ trigger.event.data.mode == ''home'' }}'
+          value_template: '{{ trigger.event.data.mode == ''night'' }}'
         sequence:
         - service: mqtt.publish
           data_template:
